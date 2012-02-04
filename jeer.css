@@ -1,0 +1,17 @@
+/* jeer.css */
+
+.testResults tr.fail td {
+	background-color: #ffcccc;
+}
+
+.testResults tr.pass td {
+	background-color: #ccffcc;
+}
+
+h1.fail {
+	color: #aa3333;
+}
+
+h1.pass {
+	color: #33aa33;
+}
