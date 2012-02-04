@@ -1,0 +1,61 @@
+jeer
+=====================================================================
+
+jeer is a (very, very) simple unit testing framework for JavaScript.
+
+
+How to use jeer (with HTML - console support TBD)
+=====================================================================
+
+1. Include jeer.js and jeer.css in an HTML file of your creation.
+
+2. Create a function that will be executed when that page is loaded
+    (You can use $(function() { ... }) in jQuery, 
+    or window.addEventListener('load', function() { ... }, false))
+    or any other method you like)
+
+3. Write some tests to be executed
+
+
+How to write tests
+=====================================================================
+
+Tests in jeer belong to a group. You start a group with:
+
+    tests("My Tests", function() {
+
+		// Tests in here
+		
+    });
+
+You write your tests inside that function with:
+
+	test("1 + 1 = 2", function() {
+		assertEqual(1 + 1, 2);
+	});
+	
+	
+Assertions
+=====================================================================
+
+jeer supports the following assertions:
+
+    assertNull()
+    assertNotNull()
+    assertEqual()
+
+and you can assert that anything is true by using the basic
+
+    assert(boolean)
+
+
+On the radar
+=====================================================================
+
+    Support v8 and print
+    Support console.log
+    Simple mocking
+
+
+
+
